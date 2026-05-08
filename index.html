@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Benicole Trading Ent.</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#0b0f1c;
+  color:white;
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  background:black;
+  border-bottom:2px solid gold;
+  position:sticky;
+  top:0;
+  z-index:999;
+}
+
+header h1{
+  color:gold;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=3000&q=90') center/cover no-repeat;
+  position:relative;
+}
+
+.hero-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:60px;
+  color:gold;
+}
+
+/* CATEGORY */
+.category{
+  padding:100px 40px;
+}
+
+.category h2{
+  text-align:center;
+  font-size:40px;
+  color:gold;
+  margin-bottom:40px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+/* PRODUCT CARD */
+.item{
+  background:#111a2e;
+  border-radius:15px;
+  overflow:hidden;
+}
+
+.item img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+}
+
+.item h3{
+  padding:10px;
+}
+
+/* BUTTON */
+.btn{
+  width:90%;
+  margin:10px;
+  padding:12px;
+  border:none;
+  cursor:pointer;
+  background:#25D366;
+  color:white;
+  font-weight:bold;
+}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+  padding:60px;
+  line-height:1.8;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:black;
+  color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>BENICOLE TRADING ENT.</h1>
+  <div>WhatsApp Store</div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay">
+    <h2>Premium Musical Instruments</h2>
+    <p>Grand Pianos • Guitars • Drums • Wind Instruments • Audio Equipment</p>
+  </div>
+</section>
+
+<!-- GRAND PIANOS -->
+<section class="category">
+<h2>Grand Pianos</h2>
+
+<div class="grid">
+
+<div class="item">
+<img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=3000&q=90">
+<h3>Concert Grand Piano</h3>
+<button class="btn" onclick="wa('Concert Grand Piano')">Order on WhatsApp</button>
+</div>
+
+<div class="item">
+<img src="https://images.unsplash.com/photo-1513883049090-d0b7439799bf?auto=format&fit=crop&w=3000&q=90">
+<h3>Studio Grand Piano</h3>
+<button class="btn" onclick="wa('Studio Grand Piano')">Order on WhatsApp</button>
+</div>
+
+</div>
+</section>
+
+<!-- UPRIGHT -->
+<section class="category">
+<h2>Upright Pianos</h2>
+
+<div class="grid">
+<div class="item">
+<img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=3000&q=90">
+<h3>Classic Upright Piano</h3>
+<button class="btn" onclick="wa('Upright Piano')">Order on WhatsApp</button>
+</div>
+</div>
+</section>
+
+<!-- DIGITAL PIANOS -->
+<section class="category">
+<h2>Digital Pianos</h2>
+
+<div class="grid">
+<div class="item">
+<img src="https://images.unsplash.com/photo-1513883049090-d0b7439799bf?auto=format&fit=crop&w=3000&q=90">
+<h3>Clavinova Digital Piano</h3>
+<button class="btn" onclick="wa('Clavinova Piano')">Order on WhatsApp</button>
+</div>
+</div>
+</section>
+
+<!-- GUITARS -->
+<section class="category">
+<h2>Guitars</h2>
+
+<div class="grid">
+
+<div class="item">
+<img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=3000&q=90">
+<h3>Acoustic Guitar</h3>
+<button class="btn" onclick="wa('Acoustic Guitar')">Order on WhatsApp</button>
+</div>
+
+<div class="item">
+<img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=3000&q=90">
+<h3>Electric Guitar</h3>
+<button class="btn" onclick="wa('Electric Guitar')">Order on WhatsApp</button>
+</div>
+
+</div>
+</section>
+
+<!-- DRUMS -->
+<section class="category">
+<h2>Drums</h2>
+
+<div class="grid">
+<div class="item">
+<img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=3000&q=90">
+<h3>Acoustic Drum Set</h3>
+<button class="btn" onclick="wa('Drum Set')">Order on WhatsApp</button>
+</div>
+</div>
+</section>
+
+<!-- WIND -->
+<section class="category">
+<h2>Wind Instruments</h2>
+
+<div class="grid">
+<div class="item">
+<img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=3000&q=90">
+<h3>Saxophone</h3>
+<button class="btn" onclick="wa('Saxophone')">Order on WhatsApp</button>
+</div>
+</div>
+</section>
+
+<!-- AUDIO -->
+<section class="category">
+<h2>Professional Audio Equipment</h2>
+
+<div class="grid">
+<div class="item">
+<img src="https://images.unsplash.com/photo-1585386959984-a41552231693?auto=format&fit=crop&w=3000&q=90">
+<h3>Mixing Console</h3>
+<button class="btn" onclick="wa('Mixing Console')">Order on WhatsApp</button>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+<h2>Contact Benicole Trading Ent.</h2>
+
+<p>CEO: Bernard Dodji Aboudou</p>
+<p>Kaneshie, Accra - Ghana</p>
+
+<p>
++233 20 901 0085<br>
+026 667 0429<br>
+020 830 7591<br>
+024 496 7823
+</p>
+
+<p>Email: benitoabudu@gmail.com</p>
+</section>
+
+<footer>
+© 2026 Benicole Trading Ent.
+</footer>
+
+<script>
+
+function wa(product){
+  let phone = "233209010085";
+  let msg = "Hello Benicole Trading Ent., I want to order: " + product;
+  let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(msg);
+  window.open(url, "_blank");
+}
+
+</script>
+
+</body>
+</html>
