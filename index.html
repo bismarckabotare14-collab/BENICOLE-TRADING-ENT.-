@@ -1,0 +1,49 @@
+<body style="margin:0;font-family:Arial;background:#0b0b0b;color:white;">
+
+<header style="position:sticky;top:0;background:black;padding:15px;border-bottom:1px solid gold;z-index:999;">
+<h2 style="color:gold;margin:0;">BENICOLE MEGA MUSIC WAREHOUSE</h2>
+</header>
+
+<section style="padding:60px;text-align:center;">
+<h1 style="color:gold;font-size:40px;">THE BIGGEST MUSIC STORE IN GHANA</h1>
+<p>Scroll through thousands of instruments, gear, and professional audio equipment.</p>
+</section>
+
+<!-- CATEGORY TEMPLATE -->
+<script>
+function section(title, prefix, count, tag){
+document.write(`<section style="padding:60px 20px;">
+<h2 style="color:gold;text-align:center;font-size:32px;">${title}</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:30px;">`);
+
+for(let i=1;i<=count;i++){
+document.write(`
+<div style="background:#111;padding:10px;border:1px solid gold;border-radius:10px;text-align:center;">
+<b>${prefix} ${i}</b>
+<div style="font-size:12px;opacity:0.7;">${tag}</div>
+</div>
+`);
+}
+
+document.write(`</div></section>`);
+}
+
+// MASSIVE INVENTORY
+section("🎹 KEYBOARDS & PIANOS", "Keyboard Model", 200, "Yamaha / Roland / Korg / Casio");
+section("🎸 GUITARS COLLECTION", "Guitar Model", 200, "Fender / Gibson / Ibanez / Taylor");
+section("🥁 DRUMS & PERCUSSION", "Drum Kit", 180, "Pearl / Tama / Mapex");
+section("🎤 MICROPHONES", "Microphone", 220, "Shure / AKG / Sennheiser / Audio-Technica");
+section("🎧 DJ & STUDIO GEAR", "DJ Equipment", 160, "Pioneer / Denon / Numark");
+section("🔊 SOUND SYSTEMS", "Speaker System", 200, "JBL / QSC / EV / Mackie");
+section("🔌 ACCESSORIES", "Accessory", 300, "Cables / Stands / Connectors / Cases");
+section("🎻 ORCHESTRA INSTRUMENTS", "Instrument", 180, "Violin / Sax / Trumpet / Flute");
+</script>
+
+<section style="padding:80px;text-align:center;">
+<h2 style="color:gold;">CONTACT BENICOLE</h2>
+<p>📍 Kaneshie, Accra</p>
+<p>📞 +233 20 901 0085</p>
+<p>📧 benitoabudu@gmail.com</p>
+</section>
+
+</body>
